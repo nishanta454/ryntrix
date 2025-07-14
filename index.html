@@ -232,64 +232,50 @@
                     </div>
                 </div>
 
-                <!-- Updated Zoho Form -->
                 <div class="contact-form-wrapper">
-                    <form
-                        action='https://forms.zohopublic.in/supportryn1/form/RyntrixContactForm/formperma/r9xZh9bxDfUOSEzgssQpOqFbYlc65ixywx2ugg-mTbc/htmlRecords/submit'
-                        name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'
-                        class="contact-form">
-
-                        <input type="hidden" name="zf_referrer_name" value="">
-                        <input type="hidden" name="zf_redirect_url" value="">
-                        <input type="hidden" name="zc_gad" value="">
-
+                    <form action='https://forms.zohopublic.in/supportryn1/form/RyntrixContactForm/formperma/r9xZh9bxDfUOSEzgssQpOqFbYlc65ixywx2ugg-mTbc/htmlRecords/submit' 
+                        name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' class="contact-form">
+                        
+                        <input type="hidden" name="zf_redirect_url" value="https://ryntrix.com/#contact">
+                        
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="Name_First">First Name <em>*</em></label>
-                                <input type="text" maxlength="255" name="Name_First" id="Name_First" fieldType=7
-                                    placeholder="Enter your first name" required />
+                                <input type="text" maxlength="255" name="Name_First" id="Name_First" required />
                             </div>
                             <div class="form-group">
                                 <label for="Name_Last">Last Name</label>
-                                <input type="text" maxlength="255" name="Name_Last" id="Name_Last" fieldType=7
-                                    placeholder="Enter your last name" />
+                                <input type="text" maxlength="255" name="Name_Last" id="Name_Last" />
                             </div>
                         </div>
-
+                        
                         <div class="form-group">
                             <label for="Email">Email <em>*</em></label>
-                            <input type="email" maxlength="255" name="Email" id="Email" value="" fieldType=9
-                                placeholder="Enter your email address" required />
+                            <input type="email" maxlength="255" name="Email" id="Email" required />
                         </div>
-
+                        
                         <div class="form-group">
                             <label for="PhoneNumber_countrycode">Phone <em>*</em></label>
-                            <input type="tel" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1"
-                                isCountryCodeEnabled=false maxlength="20" value="" fieldType=11
-                                id="international_PhoneNumber_countrycode" placeholder="Enter your phone number"
-                                required />
+                            <input type="tel" name="PhoneNumber_countrycode" id="international_PhoneNumber_countrycode" required />
                         </div>
-
+                        
                         <div class="form-group">
                             <label for="SingleLine">Subject <em>*</em></label>
-                            <input type="text" name="SingleLine" id="SingleLine" value="" fieldType=1 maxlength="255"
-                                placeholder="Enter the subject of your inquiry" required />
+                            <input type="text" name="SingleLine" id="SingleLine" required />
                         </div>
-
+                        
                         <div class="form-group">
                             <label for="MultiLine">Message</label>
-                            <textarea name="MultiLine" id="MultiLine" maxlength="65535" rows="5"
-                                placeholder="Tell us about your project requirements..."></textarea>
+                            <textarea name="MultiLine" id="MultiLine" rows="5"></textarea>
                         </div>
-
-                        <button type="submit" id="submitBtn" class="btn btn-primary">
+                        
+                        <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i>
                             <span>Send Message</span>
                         </button>
                     </form>
-
-                    <!-- Message display area -->
-                    <div id="formMessage" class="form-message"></div>
+                    <!-- Success message area -->
+                    <div id="formMessage" class="form-message" style="display: none;"></div>
                 </div>
             </div>
         </div>
